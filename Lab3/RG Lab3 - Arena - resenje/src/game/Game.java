@@ -149,6 +149,11 @@ public class Game extends Application {
                 scene.setCamera(cam);
                 break;
         }
+        if (scene.getCamera() == player.getView()) {
+            player.getBody().setVisible(false);
+        } else {
+            player.getBody().setVisible(true);
+        }
     }
 
     @Override

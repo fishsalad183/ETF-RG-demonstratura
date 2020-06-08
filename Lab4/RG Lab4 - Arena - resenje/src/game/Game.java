@@ -261,6 +261,11 @@ public class Game extends Application {
 //                mainSubscene.setCamera(parallelCam);
 //                break;
         }
+        if (mainSubscene.getCamera() == player.getView()) {
+            player.getBody().setVisible(false);
+        } else {
+            player.getBody().setVisible(true);
+        }
     }
 
     public void rotateCamCarrierY(boolean right) {

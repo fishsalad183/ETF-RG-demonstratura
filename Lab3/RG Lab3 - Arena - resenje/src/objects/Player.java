@@ -66,6 +66,7 @@ public class Player extends GameObject implements EventHandler<Event> {
         body = new Cylinder(RADIUS, HEIGHT);
         PhongMaterial transparentMaterial = new PhongMaterial(new Color(1, 1, 1, 0));
         body.setMaterial(transparentMaterial);
+        body.setVisible(false);
 
         view = new PerspectiveCamera(true);
         view.setNearClip(NEAR_CLIP);
